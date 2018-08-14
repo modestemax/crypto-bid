@@ -13,7 +13,7 @@ module.exports = { sellOder, buyOder, cancelOrder, controlTrade }
 
 async function buyOder({ strategy, strategyOptions, exchangeId, symbolId, bid }) {
     //for test
-    bid = bid * 3 / 4
+  //  bid = bid * 3 / 4
 
     const newClientOrderId = [strategy, exchangeId, symbolId].join('_');
     strategyOptions = _.defaults({}, strategyOptions, strategies[strategy], defaultStrategyOptions)
